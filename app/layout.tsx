@@ -3,13 +3,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gebedi.com"),
+
   title: {
     default: "Gebedi | Premium Digital Brands",
     template: "%s | Gebedi",
   },
+
   description:
     "Gebedi is the umbrella brand behind premium digital ventures across SaaS, health, services, and data engineering.",
+
   applicationName: "Gebedi",
+
   keywords: [
     "Gebedi",
     "Generation Beta Digital",
@@ -21,13 +25,28 @@ export const metadata: Metadata = {
     "data engineering",
     "premium services",
   ],
+
   authors: [{ name: "Generation Beta Digital Ltd" }],
   creator: "Generation Beta Digital Ltd",
   publisher: "Generation Beta Digital Ltd",
   category: "business",
+
   alternates: {
     canonical: "https://gebedi.com",
   },
+
+  // ✅ EKLENEN KISIM
+  manifest: "/site.webmanifest",
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
+
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -45,6 +64,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Gebedi | Premium Digital Brands",
@@ -52,6 +72,7 @@ export const metadata: Metadata = {
       "A premium umbrella brand building modern digital ventures with trust, design, and technical depth.",
     images: ["/og/gebedi-og.jpg"],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -67,12 +88,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en-GB">
-      <body className="bg-[#f6f8fc] text-slate-900 antialiased">{children}</body>
+      <body className="bg-[#f6f8fc] text-slate-900 antialiased">
+        {children}
+      </body>
     </html>
   );
 }
