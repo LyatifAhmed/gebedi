@@ -156,7 +156,7 @@ export default function AboutPage() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="mailto:hello@gebedi.com"
+                  href="mailto:info@gebedi.com"
                   className="inline-flex h-12 items-center justify-center rounded-2xl bg-white px-6 text-sm font-semibold text-slate-950 transition hover:opacity-90"
                 >
                   Discuss a project
