@@ -47,7 +47,7 @@ export default function FounderSection() {
             <div className="relative overflow-hidden rounded-[28px] border border-white/60 bg-white/70 shadow-[0_30px_80px_-40px_rgba(15,23,42,.25)] backdrop-blur-xl">
               
               <Image
-                src="/gebedi-founder.png"
+                src="/gebedi-founder.webp"
                 alt="Founder of Gebedi"
                 width={600}
                 height={700}
