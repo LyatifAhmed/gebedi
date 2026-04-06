@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gebedi.com"),
+  metadataBase: new URL("https://www.gebedi.com"),
 
   title: {
     default: "Gebedi | Premium Digital Brands",
@@ -32,10 +32,9 @@ export const metadata: Metadata = {
   category: "business",
 
   alternates: {
-    canonical: "https://gebedi.com",
+    canonical: "https://www.gebedi.com",
   },
 
-  // ✅ EKLENEN KISIM
   manifest: "/site.webmanifest",
 
   icons: {
@@ -50,14 +49,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://gebedi.com",
+    url: "https://www.gebedi.com",
     siteName: "Gebedi",
     title: "Gebedi | Premium Digital Brands",
     description:
       "A premium umbrella brand building modern digital ventures with trust, design, and technical depth.",
     images: [
       {
-        url: "/og/gebedi-og.jpg",
+        url: "https://www.gebedi.com/og/gebedi-og.jpg",
         width: 1200,
         height: 630,
         alt: "Gebedi | Premium Digital Brands",
@@ -70,7 +69,7 @@ export const metadata: Metadata = {
     title: "Gebedi | Premium Digital Brands",
     description:
       "A premium umbrella brand building modern digital ventures with trust, design, and technical depth.",
-    images: ["/og/gebedi-og.jpg"],
+    images: ["https://www.gebedi.com/og/gebedi-og.jpg"],
   },
 
   robots: {
