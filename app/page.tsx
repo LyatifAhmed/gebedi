@@ -73,10 +73,32 @@ export default function HomePage() {
 
       <Navbar />
 
-      <main>
+      <main className="bg-[#f8fafc]">
         <Hero />
+
         <LogoCarousel ventures={ventures} />
-        
+
+        {/* NEW — BRAND STATEMENT */}
+        <section className="py-28 md:py-36">
+          <div className="mx-auto max-w-4xl px-6 text-center md:px-10">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-slate-400">
+              Philosophy
+            </p>
+
+            <h2 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.05em] text-slate-950 md:text-5xl">
+              Not just building products.
+              <br />
+              Building brands that hold.
+            </h2>
+
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+              Every venture under Gebedi is shaped with the same intention —
+              clarity in positioning, strength in execution, and a long-term
+              commitment to trust.
+            </p>
+          </div>
+        </section>
+
         <CTASection />
       </main>
 
