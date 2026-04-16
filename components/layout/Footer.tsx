@@ -25,8 +25,8 @@ const ventures = [
 
 export default function Footer() {
   return (
-    <footer className="relative mt-24 overflow-hidden border-t border-white/70 bg-white/72 py-16 backdrop-blur-2xl md:mt-32 md:py-20">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(99,102,241,0.08),transparent_30%),radial-gradient(circle_at_top_left,rgba(217,70,239,0.06),transparent_26%)]" />
+    <footer className="relative mt-24 overflow-hidden border-t border-slate-200/80 bg-white/72 py-16 backdrop-blur-2xl dark:border-white/10 dark:bg-white/5 md:mt-32 md:py-20">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(99,102,241,0.08),transparent_30%),radial-gradient(circle_at_top_left,rgba(217,70,239,0.06),transparent_26%)] dark:bg-[radial-gradient(circle_at_bottom_right,rgba(99,102,241,0.16),transparent_30%),radial-gradient(circle_at_top_left,rgba(217,70,239,0.12),transparent_26%)]" />
 
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr_0.9fr_1fr]">
@@ -41,40 +41,40 @@ export default function Footer() {
               />
             </Link>
 
-            <p className="mt-5 max-w-md text-sm leading-7 text-slate-600">
+            <p className="mt-5 max-w-md text-sm leading-7 text-slate-600 dark:text-slate-300">
               Gebedi is the umbrella brand behind a focused portfolio of premium
               digital ventures across SaaS, health, services, and data.
             </p>
 
-            <div className="mt-6 inline-flex rounded-full border border-slate-200 bg-white/82 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500">
+            <div className="mt-6 inline-flex rounded-full border border-slate-200 bg-white/82 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500 dark:border-white/10 dark:bg-white/8 dark:text-slate-300">
               Generation Beta Digital Ltd
             </div>
           </div>
 
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500">
               Company
             </h3>
 
-            <div className="mt-5 flex flex-col gap-3 text-sm text-slate-600">
-              <Link href="/" className="transition hover:text-slate-950">
+            <div className="mt-5 flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-300">
+              <Link href="/" className="transition hover:text-slate-950 dark:hover:text-white">
                 Home
               </Link>
-              <Link href="/about" className="transition hover:text-slate-950">
+              <Link href="/about" className="transition hover:text-slate-950 dark:hover:text-white">
                 About
               </Link>
-              <Link href="/ventures" className="transition hover:text-slate-950">
+              <Link href="/ventures" className="transition hover:text-slate-950 dark:hover:text-white">
                 Ventures
               </Link>
             </div>
           </div>
 
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500">
               Ventures
             </h3>
 
-            <div className="mt-5 flex flex-col gap-3 text-sm text-slate-600">
+            <div className="mt-5 flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-300">
               {ventures.map((venture) => {
                 const isExternal = venture.href.startsWith("http");
 
@@ -84,7 +84,7 @@ export default function Footer() {
                     href={venture.href}
                     target={isExternal ? "_blank" : "_self"}
                     rel={isExternal ? "noreferrer" : undefined}
-                    className="transition hover:text-slate-950"
+                    className="transition hover:text-slate-950 dark:hover:text-white"
                   >
                     {venture.name}
                   </Link>
@@ -94,14 +94,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500">
               Contact & Trust
             </h3>
 
-            <div className="mt-5 flex flex-col gap-4 text-sm text-slate-600">
+            <div className="mt-5 flex flex-col gap-4 text-sm text-slate-600 dark:text-slate-300">
               <a
                 href="mailto:info@gebedi.com"
-                className="transition hover:text-slate-950"
+                className="transition hover:text-slate-950 dark:hover:text-white"
               >
                 info@gebedi.com
               </a>
@@ -112,7 +112,7 @@ export default function Footer() {
                 London EC2A 4NE, United Kingdom
               </div>
 
-              <div className="space-y-2 pt-1 text-xs text-slate-400">
+              <div className="space-y-2 pt-1 text-xs text-slate-400 dark:text-slate-500">
                 <div>Company No: 16274319</div>
                 <div>ICO Registration No: ZB883806</div>
               </div>
@@ -120,7 +120,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-3 border-t border-slate-200/70 pt-6 text-xs text-slate-400 md:mt-16 md:flex-row md:items-center md:justify-between">
+        <div className="mt-14 flex flex-col gap-3 border-t border-slate-200/70 pt-6 text-xs text-slate-400 dark:border-white/10 dark:text-slate-500 md:mt-16 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Gebedi. All rights reserved.</p>
           <p>Built with clarity, trust, and long-term brand thinking.</p>
         </div>
