@@ -7,31 +7,31 @@ import CTASection from "@/components/home/CTASection";
 import { ventures } from "@/data/ventures";
 
 export const metadata: Metadata = {
-  title: "Gebedi | SEO-Led Websites & Digital Ventures",
+  title: "Gebedi | Build Trust Online",
   description:
-    "Gebedi builds SEO-led websites, AI-assisted systems, and digital ventures for modern service businesses, founders, and online brands.",
+    "Gebedi helps businesses build trust online through professional websites, SEO foundations, AI-assisted systems, and business infrastructure.",
   alternates: {
     canonical: "https://gebedi.com",
   },
   openGraph: {
-    title: "Gebedi | SEO-Led Websites & Digital Ventures",
+    title: "Gebedi | Build Trust Online",
     description:
-      "Clean, fast, search-ready websites and digital systems designed to build trust, generate enquiries, and support long-term growth.",
+      "Professional websites, search visibility, AI systems, and business infrastructure designed to help companies look established and grow with confidence.",
     url: "https://gebedi.com",
     images: [
       {
         url: "/og/gebedi-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Gebedi | SEO-Led Websites & Digital Ventures",
+        alt: "Gebedi | Build Trust Online",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gebedi | SEO-Led Websites & Digital Ventures",
+    title: "Gebedi | Build Trust Online",
     description:
-      "SEO-led websites, AI-assisted systems, and digital ventures built with clarity, trust, and technical depth.",
+      "Websites, SEO foundations, AI systems, and business infrastructure for companies that want to look trusted and grow with confidence.",
     images: ["/og/gebedi-og.jpg"],
   },
 };
@@ -43,7 +43,7 @@ const orgJsonLd = {
   url: "https://gebedi.com",
   logo: "https://gebedi.com/gebedi-logo.png",
   description:
-    "Gebedi builds SEO-led websites, AI-assisted systems, and digital ventures for modern service businesses, founders, and online brands.",
+    "Gebedi helps businesses build trust online through professional websites, SEO foundations, AI-assisted systems, and business infrastructure.",
   parentOrganization: {
     "@type": "Organization",
     name: "Generation Beta Digital Ltd",
@@ -56,8 +56,32 @@ const websiteJsonLd = {
   name: "Gebedi",
   url: "https://gebedi.com",
   description:
-    "SEO-led websites, AI-assisted systems, and digital ventures built with clarity, trust, and technical depth.",
+    "Professional websites, search visibility, AI systems, and business infrastructure designed to help companies look established and grow with confidence.",
 };
+
+const trustPillars = [
+  {
+    title: "Look established",
+    text: "A clean website, professional email, strong positioning and credible business presence help customers feel they are dealing with a serious company.",
+  },
+  {
+    title: "Be found",
+    text: "SEO-ready pages, service structure, blog foundations, analytics and Search Console setup give your business a clearer path into Google.",
+  },
+  {
+    title: "Convert interest",
+    text: "Enquiry forms, AI-assisted chat, call-to-action structure and simple customer journeys help visitors turn into real leads.",
+  },
+];
+
+const services = [
+  "Professional business websites",
+  "SEO foundations and blog structure",
+  "AI customer assistants",
+  "Lead enquiry systems",
+  "Analytics and Search Console",
+  "Business address support through BetaOffice",
+];
 
 export default function HomePage() {
   return (
@@ -78,49 +102,35 @@ export default function HomePage() {
 
         <LogoCarousel ventures={ventures} />
 
-        <section className="relative overflow-hidden py-28 md:py-40">
-          <div className="pointer-events-none absolute left-1/2 top-0 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-indigo-400/10 blur-3xl" />
+        <section className="relative overflow-hidden py-24 md:py-36">
+          <div className="pointer-events-none absolute left-1/2 top-0 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-indigo-400/10 blur-3xl" />
 
           <div className="relative mx-auto max-w-7xl px-6 md:px-10">
-            <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+            <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-slate-400">
-                  What we build
+                  What we actually build
                 </p>
 
                 <h2 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-[-0.06em] text-slate-950 md:text-6xl">
-                  Digital foundations for businesses that need to be found,
-                  trusted, and contacted.
+                  Not just websites. Trust systems for modern businesses.
                 </h2>
               </div>
 
               <div className="max-w-xl lg:ml-auto">
                 <p className="text-base leading-8 text-slate-600 md:text-lg">
-                  Gebedi creates clean, fast and SEO-focused websites supported
-                  by practical systems — enquiry forms, analytics, search
-                  visibility, automation and AI-assisted customer journeys.
+                  Most businesses do not only need a prettier website. They need
+                  to look credible, appear in search, answer customer questions,
+                  and make it easy for people to get in touch.
                 </p>
               </div>
             </div>
 
-            <div className="mt-16 grid gap-4 md:grid-cols-3">
-              {[
-                {
-                  title: "SEO-led websites",
-                  text: "Search-ready pages, service structure, blog foundations and technical SEO from day one.",
-                },
-                {
-                  title: "Lead systems",
-                  text: "Contact forms, email notifications, enquiry flows and conversion-focused page structure.",
-                },
-                {
-                  title: "AI-assisted support",
-                  text: "Smart chat assistants and automation that help visitors ask questions before they become leads.",
-                },
-              ].map((item) => (
+            <div className="mt-14 grid gap-4 md:grid-cols-3">
+              {trustPillars.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[2rem] border border-slate-950/10 bg-white/45 p-7 shadow-[0_24px_70px_-45px_rgba(15,23,42,.45)] backdrop-blur-xl"
+                  className="rounded-[2rem] border border-slate-950/10 bg-white/50 p-7 shadow-[0_24px_70px_-45px_rgba(15,23,42,.45)] backdrop-blur-xl"
                 >
                   <h3 className="text-xl font-semibold tracking-[-0.03em] text-slate-950">
                     {item.title}
@@ -135,47 +145,83 @@ export default function HomePage() {
         </section>
 
         <section className="border-y border-slate-950/10 bg-slate-950 py-24 text-white md:py-32">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 md:px-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div className="mx-auto grid max-w-7xl gap-12 px-6 md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-white/40">
                 Our position
               </p>
 
               <h2 className="mt-6 text-4xl font-semibold leading-[1.02] tracking-[-0.06em] md:text-6xl">
-                Not decorative websites. Business assets.
+                Trust. Visibility. Growth.
               </h2>
             </div>
 
             <div>
               <p className="text-base leading-8 text-white/65 md:text-lg">
-                We are not trying to build overcomplicated showcase websites.
-                Our focus is simple: create a strong digital presence that makes
-                a business look credible, appear in search, and turn attention
-                into enquiries.
+                Gebedi is not positioned as an award-winning design studio. Our
+                focus is more practical: helping businesses look established,
+                become easier to find, and build digital systems that support
+                real enquiries.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-24 md:py-36">
           <div className="mx-auto max-w-7xl px-6 md:px-10">
-            <div className="max-w-3xl">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-slate-400">
-                Philosophy
-              </p>
+            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-slate-400">
+                  Services
+                </p>
 
-              <h2 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.06em] text-slate-950 md:text-6xl">
-                First make it clear.
-                <br />
-                Then make it grow.
-              </h2>
+                <h2 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.06em] text-slate-950 md:text-6xl">
+                  Everything a small business needs to look serious online.
+                </h2>
 
-              <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
-                Every project starts with the essentials: positioning, speed,
-                trust, search visibility and a working path for customers to get
-                in touch. Premium design matters — but only when it supports the
-                business outcome.
-              </p>
+                <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 md:text-lg">
+                  From websites and SEO to lead forms, AI assistants and
+                  professional business presence, we package the essentials that
+                  help customers trust you faster.
+                </p>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {services.map((service) => (
+                  <div
+                    key={service}
+                    className="rounded-2xl border border-slate-950/10 bg-white/50 px-5 py-5 text-sm font-semibold text-slate-800 shadow-[0_18px_50px_-40px_rgba(15,23,42,.45)] backdrop-blur-xl"
+                  >
+                    {service}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pb-24 md:pb-36">
+          <div className="mx-auto max-w-7xl px-6 md:px-10">
+            <div className="rounded-[2.5rem] border border-slate-950/10 bg-white/55 p-8 shadow-[0_30px_100px_-70px_rgba(15,23,42,.6)] backdrop-blur-2xl md:p-12">
+              <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+                <div>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-slate-400">
+                    Built from experience
+                  </p>
+
+                  <h2 className="mt-5 text-3xl font-semibold leading-[1.05] tracking-[-0.05em] text-slate-950 md:text-5xl">
+                    We use what we learned building our own ventures.
+                  </h2>
+                </div>
+
+                <p className="text-base leading-8 text-slate-600 md:text-lg">
+                  Gebedi is shaped by real startup experience: building
+                  BetaOffice, growing organic traffic, setting up lead systems,
+                  working with search visibility, and creating online trust from
+                  scratch. That experience is what we apply to selected client
+                  projects.
+                </p>
+              </div>
             </div>
           </div>
         </section>
