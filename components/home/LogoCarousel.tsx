@@ -12,6 +12,16 @@ type Venture = {
 };
 
 export default function LogoCarousel({ ventures }: { ventures: Venture[] }) {
+  const orderedVentures = [
+    ...ventures.filter((venture) => venture.name.toLowerCase() !== "betadata"),
+    ...ventures
+      .filter((venture) => venture.name.toLowerCase() === "betadata")
+      .map((venture) => ({
+        ...venture,
+        href: "/ventures/betadata",
+      })),
+  ];
+
   return (
     <section className="relative py-24">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.06),transparent_44%)]" />
@@ -36,11 +46,11 @@ export default function LogoCarousel({ ventures }: { ventures: Venture[] }) {
         </div>
 
         <div className="relative">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#f8fafc] to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#f8fafc] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#f7f3ee] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#f7f3ee] to-transparent" />
 
           <div className="scrollbar-none flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 [scroll-behavior:smooth]">
-            {ventures.map((venture) => {
+            {orderedVentures.map((venture) => {
               const isExternal = venture.href.startsWith("http");
 
               return (
@@ -49,7 +59,7 @@ export default function LogoCarousel({ ventures }: { ventures: Venture[] }) {
                   href={venture.href}
                   target={isExternal ? "_blank" : "_self"}
                   rel={isExternal ? "noreferrer" : undefined}
-                  className="group min-w-[300px] max-w-[300px] snap-start rounded-[28px] border border-white/80 bg-white/85 p-6 shadow-[0_20px_60px_-30px_rgba(15,23,42,.16)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_28px_80px_-30px_rgba(15,23,42,.22)]"
+                  className="group min-w-[300px] max-w-[300px] snap-start rounded-[28px] border border-slate-950/10 bg-white/75 p-6 shadow-[0_20px_60px_-35px_rgba(15,23,42,.22)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white/90 hover:shadow-[0_28px_80px_-38px_rgba(15,23,42,.28)]"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-50 ring-1 ring-slate-100">
@@ -78,7 +88,9 @@ export default function LogoCarousel({ ventures }: { ventures: Venture[] }) {
                   <div className="mt-6 h-px w-full bg-slate-100" />
 
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-sm text-slate-500">Explore venture</span>
+                    <span className="text-sm text-slate-500">
+                      Explore venture
+                    </span>
                     <span className="text-sm font-medium text-slate-900 transition-transform duration-300 group-hover:translate-x-1">
                       →
                     </span>
