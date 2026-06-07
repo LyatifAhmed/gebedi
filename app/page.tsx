@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
@@ -81,6 +82,30 @@ const services = [
   "Lead enquiry systems",
   "Analytics and Search Console",
   "Business address support through BetaOffice",
+];
+
+const caseStudies = [
+  {
+    title: "BetaOffice",
+    label: "Owned Venture",
+    text: "Built a trust-first virtual office platform that reached 20+ paying customers through organic traffic, SEO, Reddit, ChatGPT and founder-led growth.",
+    stats: ["20+ paying customers", "Organic growth", "Subscription revenue"],
+    href: "/case-studies/betaoffice",
+  },
+  {
+    title: "CareBridge Health",
+    label: "Owned Venture",
+    text: "Created a healthcare coordination brand with SEO-first treatment pages, consultation flow and trust-focused positioning for international patients.",
+    stats: ["Healthcare SEO", "Lead structure", "Trust positioning"],
+    href: "/case-studies/carebridge-health",
+  },
+  {
+    title: "CleanNestPro",
+    label: "Owned Venture",
+    text: "Built a trust-first cleaning coordination brand for international property owners, Airbnb hosts and expats in Antalya.",
+    stats: ["Antalya", "SEO-ready", "International audience"],
+    href: "/case-studies/cleannestpro",
+  },
 ];
 
 export default function HomePage() {
@@ -184,6 +209,13 @@ export default function HomePage() {
                   professional business presence, we package the essentials that
                   help customers trust you faster.
                 </p>
+
+                <Link
+                  href="/services"
+                  className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-slate-950 px-6 text-sm font-semibold text-white transition hover:bg-slate-800"
+                >
+                  Explore services
+                </Link>
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2">
@@ -214,13 +246,71 @@ export default function HomePage() {
                   </h2>
                 </div>
 
-                <p className="text-base leading-8 text-slate-600 md:text-lg">
-                  Gebedi is shaped by real startup experience: building
-                  BetaOffice, growing organic traffic, setting up lead systems,
-                  working with search visibility, and creating online trust from
-                  scratch. That experience is what we apply to selected client
-                  projects.
-                </p>
+                <div>
+                  <p className="text-base leading-8 text-slate-600 md:text-lg">
+                    Gebedi is shaped by real startup experience: building
+                    BetaOffice, growing organic traffic, setting up lead systems,
+                    working with search visibility, and creating online trust
+                    from scratch. That experience is what we apply to selected
+                    client projects.
+                  </p>
+
+                  <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                    <Link
+                      href="/case-studies"
+                      className="inline-flex h-12 items-center justify-center rounded-full bg-slate-950 px-6 text-sm font-semibold text-white transition hover:bg-slate-800"
+                    >
+                      View all case studies
+                    </Link>
+
+                    <Link
+                      href="/ventures"
+                      className="inline-flex h-12 items-center justify-center rounded-full border border-slate-950/10 bg-white/55 px-6 text-sm font-semibold text-slate-950 transition hover:bg-white/85"
+                    >
+                      Explore ventures
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {caseStudies.map((study) => (
+                  <Link
+                    key={study.title}
+                    href={study.href}
+                    className="group rounded-[2rem] border border-slate-950/10 bg-white/60 p-6 shadow-[0_24px_70px_-52px_rgba(15,23,42,.5)] backdrop-blur-xl transition hover:-translate-y-1 hover:bg-white/80"
+                  >
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
+                      {study.label}
+                    </div>
+
+                    <h3 className="mt-4 text-2xl font-semibold tracking-[-0.04em] text-slate-950">
+                      {study.title}
+                    </h3>
+
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      {study.text}
+                    </p>
+
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {study.stats.map((stat) => (
+                        <span
+                          key={stat}
+                          className="rounded-full border border-slate-950/10 bg-white/70 px-3 py-1 text-[11px] font-semibold text-slate-500"
+                        >
+                          {stat}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="mt-6 text-sm font-semibold text-slate-950">
+                      View case study{" "}
+                      <span className="inline-block transition group-hover:translate-x-1">
+                        →
+                      </span>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
