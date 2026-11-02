@@ -113,7 +113,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-3 border-t border-slate-200/70 pt-6 text-xs text-slate-400 dark:border-white/10 dark:text-slate-500 md:mt-16 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Gebedi. All rights reserved.</p>
-          <p>Built with clarity, trust, and long-term brand thinking.</p>
+          <p>Building practical, scalable digital products.</p>
         </div>
       </Container>
     </footer>
