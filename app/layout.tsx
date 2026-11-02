@@ -6,18 +6,18 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.gebedi.com"),
 
   title: {
-    default: "Gebedi | Premium Digital Brands",
+    default: "Gebedi | BetaOffice Ltd Products",
     template: "%s | Gebedi",
   },
 
   description:
-    "Gebedi is the umbrella brand behind premium digital ventures across SaaS, health, services, and data engineering.",
+    "Gebedi presents the products and digital projects of BetaOffice Ltd, a UK-registered company.",
 
   applicationName: "Gebedi",
 
   keywords: [
     "Gebedi",
-    "Generation Beta Digital",
+    "BetaOffice Ltd",
     "digital brands",
     "umbrella brand",
     "premium digital ventures",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "premium services",
   ],
 
-  authors: [{ name: "Generation Beta Digital Ltd" }],
-  creator: "Generation Beta Digital Ltd",
-  publisher: "Generation Beta Digital Ltd",
+  authors: [{ name: "BetaOffice Ltd" }],
+  creator: "BetaOffice Ltd",
+  publisher: "BetaOffice Ltd",
   category: "business",
 
   alternates: {
@@ -52,24 +52,24 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://www.gebedi.com",
     siteName: "Gebedi",
-    title: "Gebedi | Premium Digital Brands",
+    title: "Gebedi | BetaOffice Ltd Products",
     description:
-      "A premium umbrella brand building modern digital ventures with trust, design, and technical depth.",
+      "Explore the products and projects of BetaOffice Ltd, including virtual office services and digital business tools.",
     images: [
       {
         url: "https://www.gebedi.com/og/gebedi-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Gebedi | Premium Digital Brands",
+        alt: "Gebedi | BetaOffice Ltd Products",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Gebedi | Premium Digital Brands",
+    title: "Gebedi | BetaOffice Ltd Products",
     description:
-      "A premium umbrella brand building modern digital ventures with trust, design, and technical depth.",
+      "Explore the products and projects of BetaOffice Ltd, including virtual office services and digital business tools.",
     images: ["https://www.gebedi.com/og/gebedi-og.jpg"],
   },
 
