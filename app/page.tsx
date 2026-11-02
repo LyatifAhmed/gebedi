@@ -8,31 +8,31 @@ import CTASection from "@/components/home/CTASection";
 import { ventures } from "@/data/ventures";
 
 export const metadata: Metadata = {
-  title: "Gebedi | Build Trust Online",
+  title: "Gebedi | BetaOffice Ltd Products",
   description:
-    "Gebedi helps businesses build trust online through professional websites, SEO foundations, AI-assisted systems, and business infrastructure.",
+    "Gebedi showcases the products and projects of BetaOffice Ltd.",
   alternates: {
     canonical: "https://gebedi.com",
   },
   openGraph: {
-    title: "Gebedi | Build Trust Online",
+    title: "Gebedi | BetaOffice Ltd Products",
     description:
-      "Professional websites, search visibility, AI systems, and business infrastructure designed to help companies look established and grow with confidence.",
+      "Explore the products and digital projects of BetaOffice Ltd, including UK virtual office services and AI business tools in development.",
     url: "https://gebedi.com",
     images: [
       {
         url: "/og/gebedi-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Gebedi | Build Trust Online",
+        alt: "Gebedi | BetaOffice Ltd Products",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gebedi | Build Trust Online",
+    title: "Gebedi | BetaOffice Ltd Products",
     description:
-      "Websites, SEO foundations, AI systems, and business infrastructure for companies that want to look trusted and grow with confidence.",
+      "Products and digital projects by BetaOffice Ltd.",
     images: ["/og/gebedi-og.jpg"],
   },
 };
@@ -44,10 +44,10 @@ const orgJsonLd = {
   url: "https://gebedi.com",
   logo: "https://gebedi.com/gebedi-logo.png",
   description:
-    "Gebedi helps businesses build trust online through professional websites, SEO foundations, AI-assisted systems, and business infrastructure.",
+    "Gebedi showcases the products and projects of BetaOffice Ltd.",
   parentOrganization: {
     "@type": "Organization",
-    name: "Generation Beta Digital Ltd",
+    name: "BetaOffice Ltd",
   },
 };
 
@@ -57,7 +57,7 @@ const websiteJsonLd = {
   name: "Gebedi",
   url: "https://gebedi.com",
   description:
-    "Professional websites, search visibility, AI systems, and business infrastructure designed to help companies look established and grow with confidence.",
+    "Explore the products and digital projects of BetaOffice Ltd, including UK virtual office services and AI business tools in development.",
 };
 
 const trustPillars = [
@@ -76,28 +76,28 @@ const trustPillars = [
 ];
 
 const services = [
-  "Professional business websites",
-  "SEO foundations and blog structure",
-  "AI customer assistants",
-  "Lead enquiry systems",
-  "Analytics and Search Console",
-  "Business address support through BetaOffice",
+  "London registered office address",
+  "Director service address",
+  "Digital mail scans and AI summaries",
+  "Company management dashboard",
+  "UK business correspondence",
+  "AI business assistant (in development)",
 ];
 
 const caseStudies = [
   {
     title: "BetaOffice",
     label: "Owned Venture",
-    text: "Built a trust-first virtual office platform that reached 20+ paying customers through organic traffic, SEO, Reddit, ChatGPT and founder-led growth.",
+    text: "Built and operate a UK virtual office service with digital mail management and AI-assisted summaries.",
     stats: ["20+ paying customers", "Organic growth", "Subscription revenue"],
     href: "/case-studies/betaoffice",
   },
   {
-    title: "CareBridge Health",
+    title: "AI Business Assistant",
     label: "Owned Venture",
-    text: "Created a healthcare coordination brand with SEO-first treatment pages, consultation flow and trust-focused positioning for international patients.",
-    stats: ["Healthcare SEO", "Lead structure", "Trust positioning"],
-    href: "/case-studies/carebridge-health",
+    text: "An AI operations assistant for small businesses, currently in development.",
+    stats: ["In development", "AI tools"],
+    href: "/ventures",
   },
   {
     title: "CleanNestPro",
@@ -138,15 +138,13 @@ export default function HomePage() {
                 </p>
 
                 <h2 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-[-0.06em] text-slate-950 md:text-6xl">
-                  Not just websites. Trust systems for modern businesses.
+                  Products for modern businesses.
                 </h2>
               </div>
 
               <div className="max-w-xl lg:ml-auto">
                 <p className="text-base leading-8 text-slate-600 md:text-lg">
-                  Most businesses do not only need a prettier website. They need
-                  to look credible, appear in search, answer customer questions,
-                  and make it easy for people to get in touch.
+                  BetaOffice Ltd develops practical digital services for business owners, beginning with our UK virtual office and mail management platform.
                 </p>
               </div>
             </div>
@@ -183,10 +181,7 @@ export default function HomePage() {
 
             <div>
               <p className="text-base leading-8 text-white/65 md:text-lg">
-                Gebedi is not positioned as an award-winning design studio. Our
-                focus is more practical: helping businesses look established,
-                become easier to find, and build digital systems that support
-                real enquiries.
+                Gebedi is a product showcase operated by BetaOffice Ltd. We distinguish live services from projects still in development.
               </p>
             </div>
           </div>
@@ -201,20 +196,18 @@ export default function HomePage() {
                 </p>
 
                 <h2 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[-0.06em] text-slate-950 md:text-6xl">
-                  Everything a small business needs to look serious online.
+                  What we build and operate.
                 </h2>
 
                 <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 md:text-lg">
-                  From websites and SEO to lead forms, AI assistants and
-                  professional business presence, we package the essentials that
-                  help customers trust you faster.
+                  We focus on UK business addresses, digital correspondence, practical business software and AI-assisted operations.
                 </p>
 
                 <Link
                   href="/services"
                   className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-slate-950 px-6 text-sm font-semibold text-white transition hover:bg-slate-800"
                 >
-                  Explore services
+                  Explore products
                 </Link>
               </div>
 
@@ -248,11 +241,7 @@ export default function HomePage() {
 
                 <div>
                   <p className="text-base leading-8 text-slate-600 md:text-lg">
-                    Gebedi is shaped by real startup experience: building
-                    BetaOffice, growing organic traffic, setting up lead systems,
-                    working with search visibility, and creating online trust
-                    from scratch. That experience is what we apply to selected
-                    client projects.
+                    BetaOffice Ltd builds products from real operating experience. Gebedi brings our services and projects together in one place.
                   </p>
 
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
