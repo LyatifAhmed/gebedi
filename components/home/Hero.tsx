@@ -22,23 +22,21 @@ export default function Hero() {
         <div className="grid items-end gap-10 lg:grid-cols-[1.12fr_0.88fr]">
           <div>
             <div className="mb-6 inline-flex items-center rounded-full border border-slate-950/10 bg-white/50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-slate-500 shadow-[0_20px_60px_-35px_rgba(15,23,42,.35)] backdrop-blur-2xl md:text-[11px]">
-              Generation Beta Digital Ltd
+              BetaOffice Ltd
             </div>
 
             <h1 className="max-w-5xl text-[3.7rem] font-semibold leading-[0.86] tracking-[-0.09em] text-slate-950 sm:text-[5.2rem] md:text-[7.2rem] xl:text-[8.8rem]">
-              Build
+              Building
               <br />
-              trust
+              useful
               <br />
-              online.
+              products.
             </h1>
           </div>
 
           <div className="max-w-md lg:pb-8">
             <p className="text-lg leading-8 text-slate-600 md:text-xl">
-              Gebedi helps businesses look established, credible and easy to
-              find through professional websites, SEO foundations, AI-assisted
-              systems and business infrastructure.
+              Gebedi showcases the products of BetaOffice Ltd, from our live virtual office and digital mail platform to AI business tools in development.
             </p>
 
             <div className="mt-8 flex flex-col gap-3">
@@ -66,10 +64,10 @@ export default function Hero() {
         </div>
 
         <div className="mt-16 grid gap-4 border-t border-slate-950/10 pt-5 text-xs uppercase tracking-[0.2em] text-slate-500 md:mt-20 md:grid-cols-4">
-          <div>Business websites</div>
-          <div className="md:text-center">Search visibility</div>
-          <div className="md:text-center">AI customer systems</div>
-          <div className="md:text-right">Business address support</div>
+          <div>Virtual office</div>
+          <div className="md:text-center">Digital mail</div>
+          <div className="md:text-center">AI business tools</div>
+          <div className="md:text-right">UK business services</div>
         </div>
       </div>
     </section>
