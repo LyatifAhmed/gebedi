@@ -9,17 +9,9 @@ const ventures = [
     name: "BetaOffice",
     href: "https://betaoffice.uk",
   },
-  {
-    name: "BetaData",
-    href: "/ventures/betadata",
-  },
-  {
+{
     name: "CleanNestPro",
     href: "https://cleannestpro.com",
-  },
-  {
-    name: "CareBridgeHealth",
-    href: "https://carebridgehealth.co",
   },
 ];
 
@@ -42,12 +34,11 @@ export default function Footer() {
             </Link>
 
             <p className="mt-5 max-w-md text-sm leading-7 text-slate-600 dark:text-slate-300">
-              Gebedi is the umbrella brand behind a focused portfolio of premium
-              digital ventures across SaaS, health, services, and data.
+              Gebedi presents the products and projects of BetaOffice Ltd, a UK-registered company.
             </p>
 
             <div className="mt-6 inline-flex rounded-full border border-slate-200 bg-white/82 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500 dark:border-white/10 dark:bg-white/8 dark:text-slate-300">
-              Generation Beta Digital Ltd
+              BetaOffice Ltd
             </div>
           </div>
 
@@ -107,9 +98,9 @@ export default function Footer() {
               </a>
 
               <div className="leading-7">
-                3rd Floor, 86–90 Paul Street
+                66 Paul Street
                 <br />
-                London EC2A 4NE, United Kingdom
+                London EC2A 4NA, United Kingdom
               </div>
 
               <div className="space-y-2 pt-1 text-xs text-slate-400 dark:text-slate-500">
