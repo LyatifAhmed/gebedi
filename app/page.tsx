@@ -62,16 +62,16 @@ const websiteJsonLd = {
 
 const trustPillars = [
   {
-    title: "Look established",
-    text: "A clean website, professional email, strong positioning and credible business presence help customers feel they are dealing with a serious company.",
+    title: "Build once, serve many",
+    text: "We develop repeatable products that can support many customers without bespoke project work.",
   },
   {
-    title: "Be found",
-    text: "SEO-ready pages, service structure, blog foundations, analytics and Search Console setup give your business a clearer path into Google.",
+    title: "Solve real problems",
+    text: "Our products focus on everyday business operations, from correspondence to useful automation.",
   },
   {
-    title: "Convert interest",
-    text: "Enquiry forms, AI-assisted chat, call-to-action structure and simple customer journeys help visitors turn into real leads.",
+    title: "Keep improving",
+    text: "We build, operate and improve our own platforms based on practical experience.",
   },
 ];
 
@@ -89,20 +89,27 @@ const caseStudies = [
     title: "BetaOffice",
     label: "Owned Venture",
     text: "Built and operate a UK virtual office service with digital mail management and AI-assisted summaries.",
-    stats: ["20+ paying customers", "Organic growth", "Subscription revenue"],
+    stats: ["Live product", "Recurring subscriptions", "Digital mail"],
     href: "/case-studies/betaoffice",
   },
   {
     title: "AI Business Assistant",
-    label: "Owned Venture",
+    label: "In development",
     text: "An AI operations assistant for small businesses, currently in development.",
     stats: ["In development", "AI tools"],
     href: "/ventures",
   },
   {
+    title: "CareBridgeHealth",
+    label: "Project",
+    text: "A healthcare coordination platform concept for international patients.",
+    stats: ["Healthcare coordination", "Project"],
+    href: "https://carebridgehealth.co",
+  },
+  {
     title: "CleanNestPro",
     label: "Owned Venture",
-    text: "Built a trust-first cleaning coordination brand for international property owners, Airbnb hosts and expats in Antalya.",
+    text: "A cleaning coordination platform for international clients in Antalya through local partners.",
     stats: ["Antalya", "SEO-ready", "International audience"],
     href: "/case-studies/cleannestpro",
   },
@@ -235,7 +242,7 @@ export default function HomePage() {
                   </p>
 
                   <h2 className="mt-5 text-3xl font-semibold leading-[1.05] tracking-[-0.05em] text-slate-950 md:text-5xl">
-                    We use what we learned building our own ventures.
+                    We build products, not bespoke client projects.
                   </h2>
                 </div>
 
