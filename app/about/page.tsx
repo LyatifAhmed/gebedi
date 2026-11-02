@@ -6,16 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Gebedi | Build Trust Online",
+  title: "About Gebedi | BetaOffice Ltd",
   description:
-    "Gebedi helps businesses build trust online through professional websites, search visibility, AI-assisted systems, lead generation, and business infrastructure.",
+    "Gebedi showcases the scalable digital products and platforms developed by BetaOffice Ltd.",
   alternates: {
     canonical: "https://gebedi.com/about",
   },
   openGraph: {
-    title: "About Gebedi | Build Trust Online",
+    title: "About Gebedi | BetaOffice Ltd",
     description:
-      "Learn how Gebedi helps businesses look established, become easier to find, and turn attention into enquiries.",
+      "Learn about BetaOffice Ltd and our focus on building repeatable digital products rather than bespoke agency services.",
     url: "https://gebedi.com/about",
     images: [
       {
@@ -44,15 +44,14 @@ const trustPillars = [
 ];
 
 const services = [
-  "Professional business websites",
-  "SEO foundations",
-  "Google Search Console setup",
-  "Analytics setup",
-  "AI customer assistants",
-  "Lead enquiry forms",
-  "Stripe payment setup",
-  "Business email setup",
-  "BetaOffice business address support",
+  "BetaOffice virtual office",
+  "Registered office and director address",
+  "Digital mail management",
+  "AI-assisted mail summaries",
+  "Self-service business tools",
+  "AI business assistant (in development)",
+  "CareBridgeHealth project",
+  "CleanNestPro project",
 ];
 
 export default function AboutPage() {
@@ -76,20 +75,15 @@ export default function AboutPage() {
               </p>
 
               <h1 className="mt-6 text-5xl font-semibold leading-[0.9] tracking-[-0.075em] text-slate-950 md:text-7xl lg:text-8xl">
-                Helping businesses
-                <br />
-                build trust online.
+                Building products<br />for real businesses.
               </h1>
 
               <p className="mx-auto mt-8 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
-                Gebedi helps businesses look established, become easier to find,
-                and turn attention into enquiries through professional websites,
-                SEO foundations, AI-assisted systems and practical business
-                infrastructure.
+                Gebedi presents the products and platforms of BetaOffice Ltd. We focus on building our own scalable tools and services, not offering custom branding, website or agency projects.
               </p>
 
               <div className="mx-auto mt-9 flex max-w-3xl flex-wrap justify-center gap-3">
-                {["Trust", "Visibility", "Growth", "Infrastructure"].map(
+                {["Products", "Software", "Automation", "Operations"].map(
                   (item) => (
                     <span
                       key={item}
@@ -266,13 +260,11 @@ export default function AboutPage() {
                   </p>
 
                   <h2 className="mt-5 text-4xl font-semibold leading-[1.04] tracking-[-0.06em] text-slate-950 md:text-6xl">
-                    Digital foundations that make a business feel serious.
+                    Practical products built to scale.
                   </h2>
 
                   <p className="mt-6 text-base leading-8 text-slate-600 md:text-lg">
-                    Selected client projects can include the practical pieces a
-                    business needs to look more credible, receive enquiries and
-                    operate with confidence online.
+                    We build and operate our own digital products for recurring business needs. We are not taking on bespoke branding, website or agency projects.
                   </p>
                 </div>
 
@@ -290,10 +282,10 @@ export default function AboutPage() {
 
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="mailto:info@gebedi.com?subject=Project enquiry"
+                  href="/ventures"
                   className="inline-flex h-12 items-center justify-center rounded-full bg-slate-950 px-6 text-sm font-semibold text-white transition hover:bg-slate-800"
                 >
-                  Discuss a project
+                  Explore our products
                 </a>
 
                 <Link
