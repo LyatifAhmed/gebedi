@@ -17,13 +17,12 @@ export const metadata: Metadata = {
   keywords: [
     "Gebedi",
     "BetaOffice Ltd",
-    "digital brands",
-    "umbrella brand",
-    "premium digital ventures",
+    "digital products",
     "SaaS",
-    "health concierge",
-    "data engineering",
-    "premium services",
+    "business software",
+    "virtual office",
+    "AI business tools",
+    "digital mail management",
   ],
 
   authors: [{ name: "BetaOffice Ltd" }],
