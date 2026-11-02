@@ -234,7 +234,7 @@ export default function AboutPage() {
                     Latif Ahmed
                   </div>
                   <div className="mt-1 text-sm text-slate-500">
-                    Founder · Generation Beta Digital Ltd
+                    Founder · BetaOffice Ltd
                   </div>
                 </div>
               </div>
@@ -320,9 +320,7 @@ export default function AboutPage() {
                 </h3>
 
                 <p className="mt-5 text-base leading-8 text-slate-600">
-                  Gebedi operates under Generation Beta Digital Ltd, a
-                  UK-registered company with a trust-focused approach to online
-                  business, digital infrastructure and data protection.
+                  Gebedi is a website of BetaOffice Ltd (company number 16274319), a UK-registered company. It presents our products and projects, including our live BetaOffice virtual office service.
                 </p>
               </div>
 
@@ -332,10 +330,10 @@ export default function AboutPage() {
                     Registered address
                   </div>
                   <div className="mt-2 text-sm font-semibold text-slate-900">
-                    3rd Floor, 86–90 Paul Street
+                    66 Paul Street
                   </div>
                   <div className="mt-1 text-sm leading-7 text-slate-600">
-                    London EC2A 4NE, United Kingdom
+                    London EC2A 4NA, United Kingdom
                   </div>
                 </div>
 
