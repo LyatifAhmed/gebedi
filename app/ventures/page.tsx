@@ -8,14 +8,14 @@ import { ventures } from "@/data/ventures";
 export const metadata: Metadata = {
   title: "Ventures",
   description:
-    "Explore the ventures under the Gebedi umbrella, including BetaOffice, BetaData, CareBridgeHealth, and CleanNestPro.",
+    "Explore products and projects from BetaOffice Ltd, including BetaOffice, CleanNestPro and an AI business assistant in development.",
   alternates: {
     canonical: "https://gebedi.com/ventures",
   },
   openGraph: {
     title: "Gebedi Ventures",
     description:
-      "Explore the ventures under the Gebedi umbrella, including BetaOffice, BetaData, CareBridgeHealth, and CleanNestPro.",
+      "Explore products and projects from BetaOffice Ltd, including BetaOffice, CleanNestPro and an AI business assistant in development.",
     url: "https://gebedi.com/ventures",
     images: [
       {
@@ -33,30 +33,9 @@ const venturesJsonLd = {
   "@type": "ItemList",
   name: "Gebedi Ventures",
   itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "BetaOffice",
-      url: "https://betaoffice.uk",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "BetaData",
-      url: "https://gebedi.com/ventures/betadata",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "CareBridgeHealth",
-      url: "https://carebridgehealth.co",
-    },
-    {
-      "@type": "ListItem",
-      position: 4,
-      name: "CleanNestPro",
-      url: "https://cleannestpro.com",
-    },
+    { "@type": "ListItem", position: 1, name: "BetaOffice", url: "https://betaoffice.uk" },
+    { "@type": "ListItem", position: 2, name: "AI Business Assistant", url: "https://gebedi.com/ventures" },
+    { "@type": "ListItem", position: 3, name: "CleanNestPro", url: "https://cleannestpro.com" },
   ],
 };
 
@@ -83,14 +62,11 @@ export default function VenturesPage() {
               </p>
 
               <h1 className="mt-4 text-5xl font-semibold leading-[0.92] tracking-[-0.07em] text-slate-950 md:text-7xl">
-                Brands under the Gebedi umbrella.
+                Products by BetaOffice Ltd.
               </h1>
 
               <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
-                A focused portfolio of premium digital ventures across SaaS,
-                data, healthcare coordination, and service-led platforms — all
-                shaped by the same standard of trust, design clarity, and
-                long-term execution.
+                Explore our live services and projects in development. Each product is clearly labelled with its current status.
               </p>
             </div>
           </Container>
@@ -111,7 +87,7 @@ export default function VenturesPage() {
                 </div>
 
                 <div className="text-sm font-medium text-slate-900">
-                  {ventures.length} active ventures
+                  {ventures.length} products and projects
                 </div>
               </div>
             </div>
