@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 const products = [
   { title: "BetaOffice", status: "Live service", description: "London registered office and director service addresses, digital mail scans, AI-assisted mail summaries and a self-service company dashboard.", href: "https://betaoffice.uk", action: "Explore BetaOffice" },
   { title: "AI Business Assistant", status: "In development", description: "An AI operations assistant being developed for small businesses. Not yet available as a live service.", href: "/ventures", action: "View projects" },
+  { title: "CareBridgeHealth", status: "Project", description: "A healthcare coordination platform concept for international patients. Check the project website for current availability.", href: "https://carebridgehealth.co", action: "Visit CareBridgeHealth" },
   { title: "CleanNestPro", status: "Project", description: "Cleaning service coordination for international clients in Antalya, working with local service partners.", href: "https://cleannestpro.com", action: "Visit CleanNestPro" },
 ];
 
@@ -24,7 +25,7 @@ export default function ServicesPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">BetaOffice Ltd · Company No. 16274319</p>
           <h1 className="mt-6 max-w-4xl text-5xl font-semibold tracking-[-0.06em] md:text-7xl">Products and services.</h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-600">Gebedi introduces the products and projects of BetaOffice Ltd. Our live virtual office service is available today; other tools are clearly marked by development status.</p>
-          <div className="mt-14 grid gap-5 md:grid-cols-3">
+          <div className="mt-14 grid gap-5 md:grid-cols-2">
             {products.map((product) => (
               <article key={product.title} className="flex flex-col rounded-[2rem] border border-slate-950/10 bg-white/70 p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{product.status}</p>
