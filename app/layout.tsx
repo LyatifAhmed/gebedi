@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -95,7 +94,6 @@ export default function RootLayout({
     <html lang="en-GB">
       <body className="bg-[#f6f8fc] text-slate-900 antialiased">
         {children}
-        <Script src="https://betaoffice-ai.vercel.app/boai-widget.js" strategy="afterInteractive" />
       </body>
     </html>
   );
