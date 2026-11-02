@@ -8,14 +8,14 @@ import { ventures } from "@/data/ventures";
 export const metadata: Metadata = {
   title: "Ventures",
   description:
-    "Explore products and projects from BetaOffice Ltd, including BetaOffice, CleanNestPro and an AI business assistant in development.",
+    "Explore products and projects from BetaOffice Ltd, including BetaOffice, CareBridgeHealth, CleanNestPro and an AI business assistant in development.",
   alternates: {
     canonical: "https://gebedi.com/ventures",
   },
   openGraph: {
     title: "Gebedi Ventures",
     description:
-      "Explore products and projects from BetaOffice Ltd, including BetaOffice, CleanNestPro and an AI business assistant in development.",
+      "Explore products and projects from BetaOffice Ltd, including BetaOffice, CareBridgeHealth, CleanNestPro and an AI business assistant in development.",
     url: "https://gebedi.com/ventures",
     images: [
       {
@@ -35,7 +35,8 @@ const venturesJsonLd = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "BetaOffice", url: "https://betaoffice.uk" },
     { "@type": "ListItem", position: 2, name: "AI Business Assistant", url: "https://gebedi.com/ventures" },
-    { "@type": "ListItem", position: 3, name: "CleanNestPro", url: "https://cleannestpro.com" },
+    { "@type": "ListItem", position: 3, name: "CareBridgeHealth", url: "https://carebridgehealth.co" },
+    { "@type": "ListItem", position: 4, name: "CleanNestPro", url: "https://cleannestpro.com" },
   ],
 };
 
@@ -81,8 +82,7 @@ export default function VenturesPage() {
                     Portfolio standard
                   </div>
                   <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-600 md:text-[15px]">
-                    Each venture is built with premium positioning, strong brand
-                    presentation, and a serious long-term mindset.
+                    We build repeatable products and platforms for many customers, rather than taking on bespoke client projects.
                   </p>
                 </div>
 
